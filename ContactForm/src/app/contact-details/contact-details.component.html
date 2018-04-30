@@ -1,0 +1,33 @@
+<div>
+  <h3>Contact Details:</h3>  
+  <div class="table-responsive">
+    <table class="table table-striped table-sm">
+      <thead class="thead-dark">
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Contact Number</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of contactData">
+          <td>{{item.fName}}</td>
+          <td>{{item.lName}}</td>
+          <td>{{item.email}}</td>
+          <td>{{item.contact}}</td>
+          <td>
+             <label *ngIf="item.status == true">Active</label>
+             <label *ngIf="item.status != true">Inactive</label>
+          </td>
+          <td>
+            <button class="btn btn-sm btn-primary" (click)="editContact(item.id)">Edit</button>
+            <button class="btn btn-sm btn-danger" (click)="deleteContact(item.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
