@@ -1,6 +1,9 @@
 # ContactFormApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+Technologies used are - Angular 4, Bootstrap 4.
+To run this project, download the folder, open the folder in command prompt and run "npm install" command.
+Once the npm is installed, run "ng serve --open" command to build the project and open it.
 
 ## Development server
 
